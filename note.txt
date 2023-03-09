@@ -1,0 +1,3 @@
+This is the week 9 react front end (same as everyone)
+The backend is m45-week-9 (copied from Michael due to problems earlier in the week)
+m45-week-9 is found in the second layer of desktop folder "week9_copy" -> make sure to open just the m45-week-9 folder in vs
