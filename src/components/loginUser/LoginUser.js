@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { loginUser } from "../../utils";
 import "./LoginUser.css";
 
 const LoginUser = ({user, setUser}) => {
@@ -9,6 +10,7 @@ const LoginUser = ({user, setUser}) => {
     const onLoginSubmit = async (e) => {
         e.preventDefault();
         console.log(username, password);
+        await loginUser(username, password, setUser);
     };
 
     return (
