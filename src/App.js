@@ -1,7 +1,11 @@
+import "./App.css";
+import UserWrapper from "./components/userWrapper/UserWrapper";
+
 function App() {
   return (
-    <div>
-      <h1> hello world</h1>
+    <div className="app-wrapper">
+      <h1> Awesome App</h1>
+      <UserWrapper/>
     </div>
   );
 }
