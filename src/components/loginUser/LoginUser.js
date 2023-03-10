@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { loginUser } from "../../utils";
+import { useState } from "react";
 import "./LoginUser.css";
+
+import { loginUser } from "../../utils";
 
 const LoginUser = ({user, setUser}) => {
     const [username, setUsername] = useState();
     const [password, setPassword] =useState();
-
 
     const onLoginSubmit = async (e) => {
         e.preventDefault();
@@ -18,17 +18,22 @@ const LoginUser = ({user, setUser}) => {
         <form className="login-user-form" onSubmit={onLoginSubmit}>
             <label>
                 Username:
-                <input placeholder="username"
-                onChange={(e) => setUsername(e.target.value)}/>
+                <input 
+                placeholder="username"
+                onChange={(e) => setUsername(e.target.value)}
+                />
             </label>
             <label>
                 Password:
-                <input placeholder="password"
-                onChange={(e) => setPassword(e.target.value)}/>
+                <input 
+                placeholder="password"
+                onChange={(e) => setPassword(e.target.value)}
+                />
             </label>
             <button type="submit">Login</button>
         </form>
     </div>
-    )
+    );
 };
-    export default LoginUser
+    
+export default LoginUser

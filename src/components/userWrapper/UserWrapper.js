@@ -8,9 +8,9 @@ const UserWrapper = ({user, setUser}) => {
     return (
     <div className="user-wrapper">
         <AddUser user={user} setUser={setUser} />
-        <LoginUser/>
+        <LoginUser user={user} setUser={setUser} />
     </div>
-    )
+    );
 };
 
 export default UserWrapper;
